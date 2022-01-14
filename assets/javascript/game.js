@@ -8,7 +8,7 @@ let wins = 0;
 let losses = 0;
 
 
-let rn = $(".random-number").html(random_number)
+$(".random-number").html(random_number)
 function checkScore () {
     if (score > random_number) {
         losses ++ 
@@ -16,15 +16,28 @@ function checkScore () {
         score = 0
         console.log(score)
         $(".score").html(score)
-        $(".random-number").html(Math.floor(Math.random() * 100))
+        random_number = (Math.floor(Math.random() * 100))
+        $(".random-number").html(random_number)
         $(".losses").html(losses)
+        /**Regenerate random numbers for diamonds */
+        red = Math.floor(Math.random() * (15 - 1))
+        blue = Math.floor(Math.random() * (15 - 1))
+        yellow = Math.floor(Math.random() * (15 - 1))
+        green = Math.floor(Math.random() * (15 - 1)) 
     } else if (score === random_number){
         wins ++ 
         alert ("You won!")
         score = 0
         $(".score").html(score)
-        $(".random-number").html(Math.floor(Math.random() * 100))
+        random_number = (Math.floor(Math.random() * 100))
+        $(".random-number").html(random_number)
         $('.wins').html(wins)
+
+         /**Regenerate random numbers for diamonds */
+         red = Math.floor(Math.random() * (15 - 1))
+         blue = Math.floor(Math.random() * (15 - 1))
+         yellow = Math.floor(Math.random() * (15 - 1))
+         green = Math.floor(Math.random() * (15 - 1)) 
     } else {
         $(".score").html(score)
     }

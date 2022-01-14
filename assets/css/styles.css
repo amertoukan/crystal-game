@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/background.jpeg");
+    vertical-align: middle;
+    margin: 15px;
+    padding: 15px;
+}
+
+.header-container{ 
+    background-color: rgb(176, 101, 9);
+    width: 20%;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.info-container{
+    background-color:rgb(244, 196, 137);
+    color: green;
+    font-size: 15px;
+    width: 40%;
+    margin-bottom: 15px;
+
+}
+
+.info{
+    padding: 10px
+}
+
+.inline-container{
+
+    margin: 1rem;
+    padding: 2rem 2rem;
+
+}
+.number-container{
+    display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+    background-color:rgb(85, 199, 4, 0.55);
+    padding: 70px;
+    font-size: 5em;
+    width: 90px;
+    color: white;
+}
+
+.tally-container{
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    background-color:rgb(4, 33, 199, 0.55);
+    color: white
+}
+
+.score-container{
+    background-color:rgba(58, 138, 1, 0.7);
+    margin: 15px;
+    padding: 1rem; 
+    width: 200px;
+    color: white;
+}
+
+.score{
+    font-size: 3rem;
+}
+
+.diamond{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}

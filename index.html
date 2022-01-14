@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+</head>
+<body>
+    <div>
+    <div class="header-container">
+        <h1 class="header">Crystals Game</h1>
+    </div>
+
+    <div class = "info-container">
+        <p class="info">You will be given a random number at the start of the game</p>
+        <p class="info">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p class="info">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p class="info">The value of each crystal is hidden from you until you click on it.</p>
+        <p class="info">Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+
+    <div class="inline-container">
+        <div class = "number-container">
+            <h3 class="random-number">30</h3>
+        </div>
+        <div class = "tally-container">
+            <span class = "wins-container">
+                <h6>Wins: </h6>
+                <p class="wins">0</p>
+            </span>
+
+           <span class = "wins-container">
+                <h6>Losses: </h6>
+                <p class="losses">0</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="diamonds-container">
+        <img class="diamond" id="red" src="assets/images/red.png"/>
+        <img class="diamond" id="blue" src="assets/images/blue.png"/>
+        <img class="diamond" id="yellow" src="assets/images/yellow.png"/>
+        <img class="diamond" id="green" src="assets/images/green.png"/>
+    </div>
+
+    <div class ="score-container">
+        <p>Your total score is: </p>
+    </div>
+    <div class="score-container">
+        <h1 class="score">0</h1>
+    </div>
+</div>
+</body>
+<script src = "./assets/javascript/game.js"></script>
+</html>
